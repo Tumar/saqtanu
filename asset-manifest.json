@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://tumar.github.io/saqtanu/static/css/main.eb59f405.chunk.css",
-    "main.js": "https://tumar.github.io/saqtanu/static/js/main.e6abc1cd.chunk.js",
-    "main.js.map": "https://tumar.github.io/saqtanu/static/js/main.e6abc1cd.chunk.js.map",
+    "main.js": "https://tumar.github.io/saqtanu/static/js/main.577517ed.chunk.js",
+    "main.js.map": "https://tumar.github.io/saqtanu/static/js/main.577517ed.chunk.js.map",
     "runtime-main.js": "https://tumar.github.io/saqtanu/static/js/runtime-main.9af68ce4.js",
     "runtime-main.js.map": "https://tumar.github.io/saqtanu/static/js/runtime-main.9af68ce4.js.map",
     "static/css/2.4c4dc36c.chunk.css": "https://tumar.github.io/saqtanu/static/css/2.4c4dc36c.chunk.css",
@@ -23,6 +23,6 @@
     "static/css/2.4c4dc36c.chunk.css",
     "static/js/2.1cb344d8.chunk.js",
     "static/css/main.eb59f405.chunk.css",
-    "static/js/main.e6abc1cd.chunk.js"
+    "static/js/main.577517ed.chunk.js"
   ]
 }
