@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/saqtanu/static/css/main.28c3c8c4.chunk.css",
-    "main.js": "/saqtanu/static/js/main.b4b268ae.chunk.js",
-    "main.js.map": "/saqtanu/static/js/main.b4b268ae.chunk.js.map",
-    "runtime-main.js": "/saqtanu/static/js/runtime-main.3610f0b4.js",
-    "runtime-main.js.map": "/saqtanu/static/js/runtime-main.3610f0b4.js.map",
-    "static/css/2.4c4dc36c.chunk.css": "/saqtanu/static/css/2.4c4dc36c.chunk.css",
-    "static/js/2.1cb344d8.chunk.js": "/saqtanu/static/js/2.1cb344d8.chunk.js",
-    "static/js/2.1cb344d8.chunk.js.map": "/saqtanu/static/js/2.1cb344d8.chunk.js.map",
-    "static/js/3.849e9dd3.chunk.js": "/saqtanu/static/js/3.849e9dd3.chunk.js",
-    "static/js/3.849e9dd3.chunk.js.map": "/saqtanu/static/js/3.849e9dd3.chunk.js.map",
-    "index.html": "/saqtanu/index.html",
-    "static/css/2.4c4dc36c.chunk.css.map": "/saqtanu/static/css/2.4c4dc36c.chunk.css.map",
-    "static/css/main.28c3c8c4.chunk.css.map": "/saqtanu/static/css/main.28c3c8c4.chunk.css.map",
-    "static/js/2.1cb344d8.chunk.js.LICENSE.txt": "/saqtanu/static/js/2.1cb344d8.chunk.js.LICENSE.txt",
-    "static/media/Header-logo.7e9dbd0c.svg": "/saqtanu/static/media/Header-logo.7e9dbd0c.svg",
-    "static/media/TravelProposals.scss": "/saqtanu/static/media/TTCommons-ThinItalic.ce7708f0.eot",
-    "static/media/checkbox.0aadaf29.svg": "/saqtanu/static/media/checkbox.0aadaf29.svg"
+    "main.css": "https://tumar.github.io/saqtanu/static/css/main.eb59f405.chunk.css",
+    "main.js": "https://tumar.github.io/saqtanu/static/js/main.256a3cd8.chunk.js",
+    "main.js.map": "https://tumar.github.io/saqtanu/static/js/main.256a3cd8.chunk.js.map",
+    "runtime-main.js": "https://tumar.github.io/saqtanu/static/js/runtime-main.9af68ce4.js",
+    "runtime-main.js.map": "https://tumar.github.io/saqtanu/static/js/runtime-main.9af68ce4.js.map",
+    "static/css/2.4c4dc36c.chunk.css": "https://tumar.github.io/saqtanu/static/css/2.4c4dc36c.chunk.css",
+    "static/js/2.1cb344d8.chunk.js": "https://tumar.github.io/saqtanu/static/js/2.1cb344d8.chunk.js",
+    "static/js/2.1cb344d8.chunk.js.map": "https://tumar.github.io/saqtanu/static/js/2.1cb344d8.chunk.js.map",
+    "static/js/3.849e9dd3.chunk.js": "https://tumar.github.io/saqtanu/static/js/3.849e9dd3.chunk.js",
+    "static/js/3.849e9dd3.chunk.js.map": "https://tumar.github.io/saqtanu/static/js/3.849e9dd3.chunk.js.map",
+    "index.html": "https://tumar.github.io/saqtanu/index.html",
+    "static/css/2.4c4dc36c.chunk.css.map": "https://tumar.github.io/saqtanu/static/css/2.4c4dc36c.chunk.css.map",
+    "static/css/main.eb59f405.chunk.css.map": "https://tumar.github.io/saqtanu/static/css/main.eb59f405.chunk.css.map",
+    "static/js/2.1cb344d8.chunk.js.LICENSE.txt": "https://tumar.github.io/saqtanu/static/js/2.1cb344d8.chunk.js.LICENSE.txt",
+    "static/media/Header-logo.7e9dbd0c.svg": "https://tumar.github.io/saqtanu/static/media/Header-logo.7e9dbd0c.svg",
+    "static/media/TravelProposals.scss": "https://tumar.github.io/saqtanu/static/media/TTCommons-ThinItalic.ce7708f0.eot",
+    "static/media/checkbox.0aadaf29.svg": "https://tumar.github.io/saqtanu/static/media/checkbox.0aadaf29.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3610f0b4.js",
+    "static/js/runtime-main.9af68ce4.js",
     "static/css/2.4c4dc36c.chunk.css",
     "static/js/2.1cb344d8.chunk.js",
-    "static/css/main.28c3c8c4.chunk.css",
-    "static/js/main.b4b268ae.chunk.js"
+    "static/css/main.eb59f405.chunk.css",
+    "static/js/main.256a3cd8.chunk.js"
   ]
 }
