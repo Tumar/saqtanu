@@ -1,0 +1,139 @@
+@import '/src/shared.scss';
+
+.covid-plans__item {
+  background: $white;
+  border-radius: 8px;
+  padding: 32px 16px;
+
+  @include media-lg {
+    display: grid;
+    background: transparent;
+    border-radius: 0;
+    grid-template-columns: minmax(180px, 1fr) repeat(5, 1fr);
+    align-items: center;
+    grid-template-rows: auto auto;
+    padding: 16px 40px;
+  }
+}
+
+.covid-plans__item + .covid-plans__item {
+  margin-top: 16px;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    top: 0px;
+    height: 1px;
+    background: $light-gray;
+    display: block;
+  }
+
+  @include media-lg {
+    margin-top: 0;
+  }
+}
+
+.covid-plans__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.covid-plans__row + .covid-plans__row {
+  margin-top: 12px;
+
+  @include media-lg {
+    margin-top: 0;
+  }
+}
+
+.covid-plans__img {
+  margin-bottom: 24px;
+
+  @include media-lg {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}
+
+.covid-plans__label {
+  text-transform: uppercase;
+  color: rgba($gray, 0.8);
+  @include media-lg {
+    display: none;
+  }
+}
+
+.covid-plans__value {
+  color: $blackest;
+  font-weight: 500;
+}
+
+.covid-plans__description {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  transition: $transition;
+
+  &.active {
+    padding: 12px 0 24px;
+    opacity: 1;
+    max-height: 500px;
+  }
+
+  @include media-lg {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.covid-plans__description-item {
+  align-items: flex-start;
+  display: flex;
+
+  &::before {
+    content: '';
+    display: block;
+    background: $style-1;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    margin: 8px 8px 0 2px;
+  }
+}
+
+.covid-plans__description-item + .covid-plans__description-item {
+  margin-top: 16px;
+}
+
+.covid-plans__buttons {
+  display: flex;
+  flex-direction: column;
+
+  @include media-lg {
+    flex-direction: column-reverse;
+  }
+
+  .btn {
+    margin-top: 16px;
+
+    img {
+      margin-left: 4px;
+      transform: rotate(0deg);
+      transition: $transition;
+    }
+
+    &.active {
+      img {
+        transform: rotate(540deg);
+      }
+    }
+  }
+}

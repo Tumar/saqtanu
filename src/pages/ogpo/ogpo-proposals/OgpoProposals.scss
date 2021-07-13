@@ -1,0 +1,27 @@
+@import '/src/shared.scss';
+
+.ogpo-proposals__content {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include media-xl {
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: calc(#{100% / 3 * 2} - #{32px / 2}) calc(
+        #{100% / 3} - #{32px / 2}
+      );
+    column-gap: 32px;
+  }
+}
+
+.ogpo-proposals__form {
+  background: $black;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.ogpo-proposals__lists {
+  margin-top: 16px;
+  margin-bottom: 64px;
+}

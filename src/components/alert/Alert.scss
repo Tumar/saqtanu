@@ -1,0 +1,39 @@
+@import '/src/shared.scss';
+
+.alert {
+  background: linear-gradient(
+      0deg,
+      rgba(21, 33, 44, 0.8),
+      rgba(21, 33, 44, 0.8)
+    ),
+    #ffffff;
+  box-shadow: 0px 1px 1px rgba(21, 29, 36, 0.08),
+    0px 2px 4px rgba(21, 29, 36, 0.08);
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 24px;
+  margin-bottom: 24px;
+  
+  @include media-lg {
+    align-items: center;
+  }
+}
+
+.alert__close {
+  margin-left: auto;
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.alert__prefix {
+  display: block;
+
+  @include media-lg {
+    margin-right: 8px;
+    display: inline-block;
+  }
+}

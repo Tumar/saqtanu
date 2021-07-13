@@ -1,0 +1,62 @@
+@import '/src/shared.scss';
+
+.how {
+  padding: 64px 0;
+}
+
+.how__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.how__list {
+  margin-top: 40px;
+}
+
+.how__item {
+  margin-bottom: 32px;
+
+  @include media-lg {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.how__index {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 32px;
+  margin-right: 32px;
+  border-radius: 50%;
+  border: 1px dashed $border-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: $font-weight-semibold;
+  
+  @include media-lg {
+    margin-bottom: 0;
+  }
+}
+
+.how__article {
+  flex-grow: 1;
+
+  h5 {
+    margin-bottom: 8px;
+  }
+}
+
+.how__content {
+  @include media-lg {
+    max-width: 50%;
+  }
+}
+.how__img {
+  display: none;
+
+  @include media-lg {
+    display: flex;
+  }
+}

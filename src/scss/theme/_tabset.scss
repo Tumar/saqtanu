@@ -1,0 +1,58 @@
+@import '/src/shared.scss';
+
+.tabset__nav {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.tabset__button + .tabset__button {
+  margin-left: 12px;
+}
+
+.tabset__button.active .tabset__icon {
+  width: 24px;
+  opacity: 1;
+  margin-right: 12px;
+}
+
+.tabset__icon {
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  transition: $transition;
+}
+
+.tabset__card {
+  background: $white;
+  border-radius: 8px;
+  padding: 32px;
+  color: $blackest;
+  min-height: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tabset__item {
+  display: grid;
+  row-gap: 16px;
+  column-gap: 32px;
+  display: none;
+
+  @include media-md {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.tabset__item--active {
+  display: grid;
+}
+
+.tabset__body {
+  min-height: 345px;
+}
+
+.tabset__image {
+  margin-bottom: 24px;
+}

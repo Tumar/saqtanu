@@ -1,0 +1,22 @@
+@import 'node_modules/react-input-range/src/scss/index.scss';
+
+.input-range__label {
+  display: none;
+}
+
+.input-range__slider {
+  background: $primary;
+  border-color: $white;
+}
+
+.input-range__slider-container {
+  transition: left 0.1s ease-out;
+}
+
+.input-range__track {
+  transition: left 0.1s ease-out, width 0.1s ease-out;
+}
+
+.input-range__track--active {
+  background: $primary;
+}

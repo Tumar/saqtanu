@@ -1,0 +1,29 @@
+.calculator {
+  background: $bg;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.calculator__heading {
+  margin-bottom: 32px;
+}
+
+.calculator__form {
+  background: $white;
+  padding: 24px;
+  max-width: 450px;
+  margin: 0 auto;
+
+  input {
+    width: 100%;
+  }
+}
+
+.calculator__btn {
+  width: 100%;
+}
+
+.calculator__input,
+.calculator__checkbox {
+  margin-bottom: 16px;
+}

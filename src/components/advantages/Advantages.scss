@@ -1,0 +1,42 @@
+@import '/src/shared.scss';
+
+.advantages {
+  padding: 64px 0;
+}
+
+.advantages__description {
+  max-width: 735px;
+
+  h4 {
+    margin-bottom: 8px;
+  }
+}
+
+.advantages__list {
+  display: grid;
+  row-gap: 16px;
+  padding-top: 40px;
+
+  @include media-lg {
+    column-gap: 60px;
+    row-gap: 0;
+    grid-template-columns: repeat(3, calc(33.3% - 40px));
+  }
+}
+
+.advantages__item {
+}
+
+.advantages__icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.advantages__title {
+  margin-bottom: 16px;
+}

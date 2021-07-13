@@ -1,0 +1,26 @@
+@import '/src/shared.scss';
+
+.covid-hero {
+  background: $style-1;
+  padding: 0;
+}
+
+.covid-hero__img {
+  display: none;
+  flex-grow: 1;
+  padding: 40px 0;
+
+  @include media-lg {
+    display: flex;
+  }
+}
+
+.covid-hero__wrap {
+  align-items: flex-start;
+}
+
+.covid-hero__content {
+  @include media-lg {
+    padding-top: 64px;
+  }
+}

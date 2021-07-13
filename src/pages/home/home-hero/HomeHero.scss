@@ -1,0 +1,22 @@
+@import '/src/shared.scss';
+
+.home-hero {
+  width: 100%;
+  background: $secondary;
+  color: $white;
+  padding: 64px 0;
+  overflow: hidden;
+}
+
+.home-hero__heading {
+  text-align: center;
+  margin-bottom: 16px;
+
+  @include media-md {
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    margin-bottom: 12px;
+  }
+}

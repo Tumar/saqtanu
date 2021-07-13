@@ -1,0 +1,38 @@
+@import '/src/shared.scss';
+
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 40px;
+
+  a {
+    font-size: 14px;
+    color: $white;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &::after {
+      content: '/';
+      color: $white !important;
+      margin: 0 8px;
+      display: inline-block;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.breadcrumbs--dark {
+  a {
+    color: rgba($black, 0.8);
+
+    &::after {
+      color: rgba($black, 0.8) !important;
+    }
+  }
+}

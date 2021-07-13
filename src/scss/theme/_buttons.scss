@@ -1,0 +1,103 @@
+.btn {
+  appearance: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family;
+  font-weight: $font-weight-semibold;
+  font-size: 1rem;
+  padding: 12px 24px;
+  outline: 0;
+  border: 1px solid transparent;
+  background: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  transition: $transition;
+  height: 48px;
+  transform-origin: center;
+}
+
+.btn--baseline {
+  align-items: baseline;
+
+  span + span {
+    margin-left: 5px;
+  }
+}
+
+.btn--fullsize {
+  width: 100%;
+}
+
+.btn--primary {
+  color: $dark;
+  border-color: $primary;
+  background: $primary;
+
+  &:hover {
+    border-color: darken($primary, 10);
+    background: darken($primary, 10);
+  }
+}
+
+.btn--gray {
+  color: $white;
+  border-color: rgba(21, 33, 44, 0.8);
+  background: rgba(21, 33, 44, 0.8);
+
+  &:hover {
+    border-color: rgba(21, 33, 44, 1);
+    background: rgba(21, 33, 44, 1);
+  }
+}
+
+.btn--link {
+  padding: 0;
+  height: auto;
+}
+
+.btn--white {
+  color: $white;
+  border-color: rgba($white, 0.16);
+  background: transparent;
+
+  &.active,
+  &:hover {
+    color: $black;
+    border-color: $white;
+    background: $white;
+  }
+}
+
+.btn--light {
+  color: $blackest;
+  border: 1px solid $light-gray;
+  background: $white;
+
+  &.active,
+  &:hover {
+    color: $blackest;
+    border-color: $light-gray;
+    background: $white;
+  }
+}
+
+.btn--white-outline {
+  color: $blackest;
+  border: 1px solid $light-gray;
+}
+
+.btn--transparent-outline {
+  color: $white;
+  border: 1px solid $light-gray;
+
+  &:hover {
+    color: $primary;
+    border-color: rgba($primary, 0.12);
+  }
+}
+
+.btn__icon {
+  margin-right: 12px;
+}

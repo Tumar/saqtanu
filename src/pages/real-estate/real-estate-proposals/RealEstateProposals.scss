@@ -1,0 +1,46 @@
+@import '/src/shared.scss';
+
+.real-estate-proposals {
+  padding-top: 32px;
+}
+
+.real-estate-proposals__heading {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.real-estate-proposals__content {
+  display: flex;
+  flex-direction: column;
+
+  @include media-xl {
+    align-items: flex-start;
+    display: grid;
+    grid-template-columns: calc(#{100% / 3} - #{32px / 2}) calc(
+        #{100% / 3 * 2} - #{32px / 2}
+      );
+    column-gap: 32px;
+  }
+}
+
+.real-estate-proposals__form {
+  background: $white;
+  border-radius: 6px;
+  padding: 32px 24px 24px;
+  margin-bottom: 16px;
+}
+
+.real-estate-proposals__amount {
+  color: $blackest;
+  margin: 8px 0;
+}
+
+.real-estate-proposals__title {
+  margin: 16px 0;
+}
+
+.real-estate-proposals__checkboxes {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(135, 141, 167, 0.12);
+}

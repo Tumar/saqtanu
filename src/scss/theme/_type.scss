@@ -1,0 +1,120 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  {
+  color: $headings-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.t-caption {
+  font-weight: $font-weight-semibold;
+}
+
+.t-large,
+.t-base,
+.t-small {
+  font-weight: $font-weight-base;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+h3 {
+  font-weight: $font-weight-bold;
+
+  font-size: 40px;
+  line-height: 40px;
+
+  letter-spacing: -0.01em;
+}
+
+h4 {
+  font-weight: $font-weight-bold;
+
+  font-size: 32px;
+  line-height: 32px;
+
+  letter-spacing: -0.01em;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: $font-weight-bold;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+.t-large {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.t-base {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.t-small {
+  font-size: 16px;
+  line-height: 20px;
+
+  letter-spacing: 0.02em;
+}
+
+.t-tiny {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.t-caption {
+  font-size: 12px;
+  line-height: 16px;
+
+  letter-spacing: 0.04em;
+}
+
+.color-primary {
+  color: $primary;
+}
+
+.color-white {
+  color: $white;
+}
+
+.color-blue {
+  color: $style-0;
+}
+
+.color-gray {
+  color: $gray;
+}
+
+.color-blackest {
+  color: $blackest;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+$media-sm: 480px;
+$media-md: 640px;
+$media-lg: 960px;
+$media-xl: 1280px;
+
+$font-family: 'TT Commons', sans-serif;
+
+$font-size-base: 1rem;
+$font-size-sm: 14px;
+$font-size-xs: 12px;
+
+$font-weight-base: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-base: 1.4;
+
+$primary: #ffbb37;
+$secondary: #5378ae;
+$blackest: #000;
+$black: #151c22;
+$green: #4cd964;
+$dark: #191919;
+$red: #fa1515;
+$white: #fff;
+$dark-gray: #2b2d38;
+$light-gray: rgba(#878da7, 0.12);
+$gray: #444e56;
+$dividers: rgba(135, 141, 167, 0.12);
+$bg: #f6f6f6;
+$border: #f1f1f4;
+$border-dark: #cccbcb;
+
+$style-0: #267ccc;
+$style-1: #27ae60;
+$style-2: #197e94;
+$style-3: #202eaf;
+$style-4: #3597f1;
+
+$body-bg: $white;
+$body-color: rgba($black, 0.8);
+$headings-color: $black;
+
+$transition: all 0.3s ease-in-out;
+
+$header-height: 72px;
+
+$container-padding: 16px;
+$container-padding-md: 24px;
+$container-padding-lg: 80px;
+
+$container-max-width: 1120px;

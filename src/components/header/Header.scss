@@ -1,0 +1,179 @@
+@import '/src/shared.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: $white;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 8px rgba(17, 29, 51, 0.3);
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__collapse {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  background: $white;
+  box-shadow: 0px 0px 8px rgba(17, 29, 51, 0.08);
+  top: 0;
+  opacity: 0;
+  transition: $transition;
+
+  @include media-md {
+    top: $header-height;
+    width: auto;
+  }
+
+  @include media-lg {
+    padding: 0px;
+    background: none;
+    box-shadow: none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    right: 0;
+    flex-grow: 1;
+    margin-left: 56px;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.header__collapse--shown {
+  right: 0;
+  padding: 0 8px;
+  opacity: 1;
+
+  @include media-md {
+    padding: 24px 8px;
+  }
+
+  @include media-lg {
+    opacity: 1;
+    padding: 0;
+    right: 0;
+  }
+}
+
+.header__nav {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  @include media-lg {
+    margin-bottom: 0;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.header__link {
+  display: flex;
+  text-transform: uppercase;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semibold;
+  letter-spacing: 0.08em;
+  transition: $transition;
+  color: rgba($black, 1);
+  padding: 8px 16px;
+  color: rgba($black, 0.4);
+
+  &.dropdown__item {
+    padding: 8px 16px 8px 32px;
+  }
+
+  @include media-lg {
+    align-items: center;
+    padding: 0;
+  }
+
+  &--active,
+  &:hover {
+    color: rgba($black, 1);
+  }
+}
+
+.header__item--active {
+  color: rgba($black, 1);
+}
+
+.header__item {
+  @include media-lg {
+    margin-right: 2rem;
+  }
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+
+  @include media-lg {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.header__button + .header__button {
+  margin-top: 16px;
+
+  @include media-lg {
+    margin-top: 0;
+    margin-left: 24px;
+  }
+}
+
+.header__toggle {
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  @include media-lg {
+    display: none;
+  }
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0 16px 16px;
+  margin-bottom: 24px;
+
+  @include media-md {
+    display: none;
+  }
+}
+
+.header--blue {
+  &, .header__collapse{
+    background: $style-0;
+  }
+
+  .header__link{
+    color: $white;
+  }
+
+  .dropdown__icon{
+  }
+}

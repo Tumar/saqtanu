@@ -1,0 +1,154 @@
+@import '/src/shared.scss';
+
+.gifts {
+  overflow: hidden;
+}
+
+.gifts__list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: $transition;
+
+  &:hover {
+    cursor: grab;
+  }
+
+  &:active,
+  &:focus {
+    cursor: grabbing;
+  }
+}
+
+.gifts__item {
+  min-height: 310px;
+  padding: 0 40px;
+  user-select: none;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  transition: $transition;
+
+  @include media-lg {
+    text-align: left;
+    flex-direction: row;
+    border-radius: 8px;
+    margin-right: 35px;
+  }
+}
+
+.gifts__item--disabled {
+  opacity: 0.24;
+  pointer-events: none;
+}
+
+.gifts__selected {
+  margin-top: 24px;
+  display: grid;
+  row-gap: 16px;
+  
+  @include media-md {
+    column-gap: 16px;
+    row-gap: 0px;
+    grid-template-columns: auto auto;
+  }
+}
+
+.gifts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  flex-grow: 1;
+
+  @include media-lg {
+    align-items: flex-start;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+}
+
+.gifts__container {
+  position: relative;
+  @include media-lg() {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: $container-padding-lg;
+    padding-right: $container-padding-lg;
+    max-width: $container-max-width + $container-padding-lg * 2;
+  }
+}
+
+.gifts__description {
+  margin-bottom: 10px;
+}
+
+.gifts__img {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    -webkit-user-drag: none;
+    user-select: none;
+    user-zoom: none;
+  }
+}
+
+.gifts__nav {
+  z-index: 5;
+  position: absolute;
+  display: flex;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  @include media-lg {
+    top: auto;
+    left: $container-padding-lg + 40px;
+    transform: translate(0, 0);
+    bottom: 32px;
+  }
+}
+
+.gifts__dot {
+  width: 8px;
+  height: 8px;
+  display: block;
+  opacity: 0.4;
+  border-radius: 4px;
+  transition: $transition;
+
+  &.active {
+    opacity: 1;
+    width: 32px;
+  }
+}
+
+.gifts__dot + .gifts__dot {
+  margin-left: 12px;
+}
+
+.gifts__select-button {
+  margin-top: 24px;
+}
+
+.gifts__unselect {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}

@@ -1,0 +1,27 @@
+@import '/src/shared.scss';
+
+.covid-plans__wrap {
+  @include media-lg {
+    border-radius: 8px;
+    background: $white;
+  }
+}
+
+.covid-plans__header {
+  display: none;
+  grid-template-columns: minmax(180px, 1fr) repeat(5, 1fr);
+  padding: 30px 40px 0;
+
+  @include media-lg {
+    display: grid;
+  }
+}
+
+.covid-plans__header-item {
+  text-transform: uppercase;
+  color: rgba($gray, 0.8);
+
+  &:last-child {
+    justify-self: flex-end;
+  }
+}

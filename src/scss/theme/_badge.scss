@@ -1,0 +1,37 @@
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.badge__icon {
+  margin-right: 8px;
+}
+
+.badge__remove {
+  width: 20px;
+  height: 20px;
+  background: none;
+  outline: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.badge--blue {
+  background: $style-0;
+  color: $white;
+}
+
+.badge--gray {
+  background: $bg;
+  color: $black;
+}

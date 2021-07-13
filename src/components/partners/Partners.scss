@@ -1,0 +1,23 @@
+@import '/src/shared.scss';
+
+.partners {
+  user-select: none;
+  overflow: hidden;
+  background: $white;
+  padding: 24px 48px;
+  border-bottom: 1px solid $border;
+}
+
+.partners__list {
+  display: flex;
+  user-select: none;
+  align-items: center;
+  
+  @include media-xl {
+    justify-content: center;
+  }
+}
+
+.partners__item + .partners__item {
+  margin-left: 32px;
+}

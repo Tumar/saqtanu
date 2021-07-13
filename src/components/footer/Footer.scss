@@ -1,0 +1,88 @@
+@import '/src/shared.scss';
+
+.footer {
+  margin-top: 64px;
+}
+
+.footer__content {
+  padding: 25px 0;
+  border-top: 1px solid $light-gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+
+  @include media-lg {
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px 0;
+
+  @include media-lg {
+    flex-direction: row;
+    margin: 0 16px;
+  }
+}
+
+.footer__text {
+  width: auto;
+  display: inline-block;
+  background: none;
+  border: 0;
+  outline: none;
+  font-family: $font-family;
+  color: rgba($dark, 0.8);
+}
+
+.footer__text {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media-lg {
+    margin-bottom: 0;
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer__link {
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.footer__copyright {
+  margin-top: 24px;
+  margin-bottom: 0;
+
+  @include media-lg {
+    margin-top: 0;
+  }
+}
+
+.footer--dark {
+  .footer__text {
+    color: $white;
+  }
+  
+  .footer__link {
+    &:hover {
+      color: $primary;
+    }
+  }
+}

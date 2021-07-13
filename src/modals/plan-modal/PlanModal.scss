@@ -1,0 +1,20 @@
+@import '/src/shared.scss';
+
+.plan-modal__plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $bg;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+
+  img {
+    max-width: 150px;
+  }
+}
+
+.plan-modal__description {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
